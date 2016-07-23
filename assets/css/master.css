@@ -57,7 +57,7 @@ h2 {
 
 @media (max-width: 767px) {
   .header {
-    height: 350px;
+    height: 330px;
     background-size: cover;
     background-position: initial;
   }

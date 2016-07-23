@@ -149,6 +149,12 @@ h2 {
   margin-top: 100px;
 }
 
+@media screen and (min-width: 768px) {
+  .gallery {
+    margin-top: 0;
+  }
+}
+
 .carousel-inner .active.left { left: -33%; }
 .carousel-inner .next        { left:  33%; }
 
@@ -204,6 +210,17 @@ h2 {
 .tag-row h2 {
   margin-top: 100px;
   text-shadow: 0 0 10px #555;
+}
+
+@media screen and (max-width: 767px) {
+  .tag-row {
+    margin-top: 0;
+    background-position: initial;
+  }
+
+  .tag-row h2 {
+    text-shadow: 1px 1px 6px #000;
+  }
 }
 
 .gallery .person .photo {

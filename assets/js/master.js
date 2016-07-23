@@ -2,7 +2,9 @@ var tag = document.createElement('script');
 
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+if ($(window).width() > 768) {
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+}
 
 // 3. This function creates an <iframe> (and YouTube player)
 //    after the API code downloads.
@@ -33,12 +35,10 @@ function onYouTubeIframeAPIReady() {
 
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
-  if ($(window).width() > 768) {
-    // event.target.playVideo();
-    player.loadVideoById(video);
-    player.setLoop(true);
-    player.mute();
-  }
+  // event.target.playVideo();
+  player.loadVideoById(video);
+  player.setLoop(true);
+  player.mute();
 }
 
 var done = false;

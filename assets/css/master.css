@@ -1,0 +1,264 @@
+@font-face {
+  font-family: 'Edo';
+  src: url('../font/edosz.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../font/Montserrat-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../font/Montserrat-Light.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (min-width: 1300px) {
+  .container {
+    width: 1250px;
+  }
+}
+
+
+body {
+  background: #2d2c2a;
+  font-family: 'Edo';
+  color: #fdf0f0;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Edo';
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.header {
+  position: relative;
+  background-image: url('../img/fundo-capa.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -100px;
+  height: 400px;
+}
+
+.header .logo img {
+  height: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+.header .video-container {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
+}
+
+.header .video-container .overlay {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.header .video-container .overlay .btn-video {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.header .video-container .overlay .btn-video img {
+  width: 180px;
+  transition: width 0.4s ease;
+}
+
+.header .video-container .overlay .btn-video img:hover {
+  width: 200px;
+
+}
+#videobg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -125px;
+  z-index: 1;
+}
+
+.icons {
+  margin: 0 auto;
+  float: none;
+}
+
+.icon {
+  font-size: 1.8em;
+  text-align: center;
+  margin-top: -15px;
+}
+
+.icon img {
+  width: 200px;
+}
+
+.icon .text {
+  position: relative;
+  line-height: 1em;
+}
+
+.icon .text small {
+  font-size: 0.6em;
+  display: block;
+}
+
+.icon .text:before {
+  content: '-';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -40px;
+  text-align: center;
+}
+
+.gallery {
+  margin-top: 100px;
+}
+
+.carousel-inner .active.left { left: -33%; }
+.carousel-inner .next        { left:  33%; }
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image:none
+}
+
+.carousel .item div {
+  height: 200px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 40%;
+  z-index: 5;
+  display: inline-block;
+}
+
+.carousel-control img {
+  width: 30px;
+}
+
+.carousel-control.left img {
+  transform: scaleX(-1);
+  margin-left: -225px;
+}
+
+.carousel-control.right img {
+  margin-right: -225px;
+}
+
+.gallery .block .content {
+  height: 200px;
+  background-color: #e5d9d9;
+}
+
+.tag-row {
+  height: 210px;
+  background-image: url("../img/camp.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -460px;
+  overflow: auto;
+  margin-top: 90px;
+}
+
+.tag-row h2 {
+  margin-top: 100px;
+  text-shadow: 0 0 10px #555;
+}
+
+.gallery .person .photo {
+  margin-left: -15px;
+  overflow: hidden;
+  background-image: url('../img/no-profile.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+}
+
+.gallery .person .data {
+  font-family: "Montserrat";
+  color: #2e2b2b;
+  padding-right: 0;
+}
+
+.gallery .person .data h3 {
+  margin-top: 0;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+.gallery .person .data p {
+  line-height: 1.2em;
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+
+.cia-atos {
+  background-color: #972429;
+  height: 220px;
+  margin-top: 70px;
+  overflow: auto;
+}
+
+.cia-atos img {
+  display: block;
+  width: 165px;
+  margin: 50px auto 0;
+}
+
+.registration {
+  font-family: 'Montserrat';
+  padding: 70px 0;
+  overflow: auto;
+}
+
+.registration img {
+  height: 320px;
+}
+
+.registration .text {
+  margin-top: 40px;
+}
+
+.registration h1 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.registration p {
+  margin-top: 50px;
+  font-size: 1.3em;
+}
+
+footer {
+  padding: 60px 0;
+  text-align: center;
+  font-size: 1.2em;
+}

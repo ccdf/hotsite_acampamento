@@ -99,10 +99,12 @@ $(document).ready(function(){
     }
   });
 
-  $('.gallery .person .data').each(function(){
-    parenth = $(this).parent().height();
-    childh = $(this).height();
+  if ($(window).width() > 768) {
+    $('.gallery .person .data').each(function(){
+      parenth = $(this).parent().height();
+      childh = $(this).height();
 
-    $(this).css('margin-top', (parenth-childh)/2);
-  });
+      $(this).css('margin-top', (parenth-childh)/2);
+    });
+  }
 });

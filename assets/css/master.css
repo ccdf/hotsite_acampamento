@@ -41,6 +41,11 @@ h2 {
   font-size: 1.8em;
 }
 
+.content {
+  width: 100%;
+  overflow: hidden;
+}
+
 .header {
   position: relative;
   background-image: url('../img/fundo-capa.png');
@@ -50,8 +55,16 @@ h2 {
   height: 400px;
 }
 
+@media (max-width: 767px) {
+  .header {
+    height: 350px;
+    background-size: auto;
+    background-position: initial;
+  }
+}
+
 .header .logo img {
-  height: 400px;
+  max-height: 400px;
   margin: 0 auto;
   display: block;
 }
@@ -169,8 +182,13 @@ h2 {
 }
 
 .gallery .block .content {
-  height: 200px;
   background-color: #e5d9d9;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery .block .content {
+    height: 200px;
+  }
 }
 
 .tag-row {
@@ -189,7 +207,6 @@ h2 {
 }
 
 .gallery .person .photo {
-  margin-left: -15px;
   overflow: hidden;
   background-image: url('../img/no-profile.gif');
   background-size: cover;
@@ -198,11 +215,28 @@ h2 {
   height: 200px;
 }
 
+@media screen and (min-width: 768px) {
+  .gallery .person .photo  {
+    margin-left: -15px;
+  }
+}
+
 .gallery .person .data {
   font-family: "Montserrat";
   color: #2e2b2b;
   padding-right: 0;
 }
+
+@media screen and (max-width: 767px) {
+  .gallery .person {
+    margin-bottom: 30px;
+  }
+
+  .gallery .person .data {
+    padding: 20px;
+  }
+}
+
 
 .gallery .person .data h3 {
   margin-top: 0;

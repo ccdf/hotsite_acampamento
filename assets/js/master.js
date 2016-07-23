@@ -33,10 +33,12 @@ function onYouTubeIframeAPIReady() {
 
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
-  // event.target.playVideo();
-  player.loadVideoById(video);
-  player.setLoop(true);
-  player.mute();
+  if ($(window).width() > 768) {
+    // event.target.playVideo();
+    player.loadVideoById(video);
+    player.setLoop(true);
+    player.mute();
+  }
 }
 
 var done = false;

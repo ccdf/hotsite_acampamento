@@ -308,33 +308,6 @@ h2 {
   font-size: 1.3em;
 }
 
-/* Modal para inscrição */
-
-.modal-body .form-horizontal .col-sm-2,
-.modal-body .form-horizontal .col-sm-10 {
-  width: 100%;
-  margin-left: 0;
-  margin-top: 13px;
-}
-
-.modal-body .form-horizontal .control-label {
-  text-align: left;
-}
-.modal-body .form-horizontal .col-sm-offset-2 {
-  margin-left: 0;
-  margin-top: 20px;
-}
-
-#modal-registration {
-  margin-top: 55px;
-}
-
-#modal-registration h4, label, button {
-  font-family: "Montserrat";
-  color: #333;
-  text-transform: uppercase;
-}
-
 footer {
   padding: 60px 0;
   text-align: center;
